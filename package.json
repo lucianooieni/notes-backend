@@ -1,0 +1,25 @@
+{
+  "name": "notes-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "standard --fix && nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "7.18.0",
+    "nodemon": "^2.0.15",
+    "standard": "16.0.4"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "eslint-config-standard": true,
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
