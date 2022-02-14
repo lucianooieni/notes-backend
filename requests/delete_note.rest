@@ -1,1 +1,2 @@
-DELETE http://localhost:3001/api/notes/6202
+DELETE http://localhost:3001/api/notes/620aa7251e42319f834754b7
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2MjBhODIwOGQ0NjVhZjAyZTI3NmVkZmEiLCJpYXQiOjE2NDQ4NjUxNjd9.zGL86sWTKelqNDjEM25gs18WFiAJUfw7wUbLaHVu9AY
