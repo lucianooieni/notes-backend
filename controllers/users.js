@@ -7,10 +7,14 @@ usersRouter.get('/', async (request, response) => {
   response.json(users)
 })
 
-usersRouter.post('/', async (request, response) => {
+usersRouter.post('/', async (request, response, next) => {
   try {
     const { username, name, password } = request.body
-
+    if (!username || !password) {
+      return response.status(400).json({
+        error: 'username or password missing'
+      })
+    }
     const saltRounds = 10
     const passwordHash = await bcrypt.hash(password, saltRounds)
 
@@ -24,7 +28,17 @@ usersRouter.post('/', async (request, response) => {
 
     response.json(savedUser)
   } catch (error) {
-    response.status(400).json(error)
+    // response.status(400).json(error)
+    next(error)
+  }
+})
+
+usersRouter.delete('/:id', async (request, response, next) => {
+  try {
+    await User.findByIdAndRemove(request.params.id)
+    response.status(204).end()
+  } catch (error) {
+    next(error)
   }
 })
 

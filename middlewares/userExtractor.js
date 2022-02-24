@@ -10,7 +10,7 @@ const getToken = request => {
 
 module.exports = (request, response, next) => {
   const token = getToken(request)
-  const decodedToken = jwt.verify(token, process.env.SECRET)
+  const decodedToken = jwt.verify(token, process.env.SECRET) // Error: JsonWebTokenError
   if (!token || !decodedToken.id) {
     return response.status(401).json({ error: 'token missing or invalid' })
   }
