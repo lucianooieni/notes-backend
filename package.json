@@ -1,7 +1,7 @@
 {
   "name": "notes-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple notes app backend ",
   "main": "index.js",
   "scripts": {
     "start": "NODE_ENV=production node index.js",
@@ -10,14 +10,14 @@
     "start:test": "NODE_ENV=test node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Luciano Oieni",
   "license": "ISC",
   "devDependencies": {
     "eslint": "7.18.0",
     "jest": "27.5.1",
     "nodemon": "2.0.15",
     "standard": "16.0.4",
-    "supertest": "^6.2.2"
+    "supertest": "6.2.2"
   },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json",
