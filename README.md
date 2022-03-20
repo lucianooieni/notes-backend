@@ -31,7 +31,7 @@ npm start
 1. [Register](https://www.mongodb.com/es/cloud/atlas/register).
 2. Create a [Free Cluster](https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/).
 3. Connect with [your cluster](https://docs.atlas.mongodb.com/tutorial/connect-to-your-cluster/).
-4. Use mongoose library to connect and query database from our application. mongoose allows you to create models.
+4. Use [mongoose](https://mongoosejs.com/) library to connect and query database from our application. mongoose allows you to create models.
 
 ##### **Models**
 
