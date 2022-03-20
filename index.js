@@ -15,7 +15,7 @@ app.use(express.json())
 
 app.get('/', (request, response) => {
   response.status(200)
-  response.send('<h1>Hello World</h1>')
+  response.send('<h1>Notes App</h1>')
 })
 
 app.use('/api/notes', notesRouter)
